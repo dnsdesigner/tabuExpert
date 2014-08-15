@@ -29,9 +29,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // Ações carregadas no início
-        //numUm.selected = true
-        //tabuadaSelect(1)
-        //tabuadaSelecionada = 1
+        tabuadaSelect(1)
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,142 +37,85 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func tabuadaDeselect(tabuada:Int) {
+        
+        // Declaração de um array com as tabuadas e variáveis de botão
+        var tabelaTabuada = [
+            1: numUm,
+            2: numDois,
+            3: numTres,
+            4: numQuatro,
+            5: numCinco,
+            6: numSeis,
+            7: numSete,
+            8: numOito,
+            9: numNove
+        ]
+        
+        for (numTabuada, numTemp) in tabelaTabuada {
+            if(numTabuada != tabuada) {
+                // Altera o valor selected da variável atual
+                //println(numTabuada)
+                numTemp.selected = false
+                
+            }
+        }
+    }
+    
+    
     // Função para selecionar os botoes de tabuada
     func tabuadaSelect(tabuada: Int){
         
-        // Declaração de um array de números inteiros
-        /*var tabelaTabuada = [
-            1: numUm.selected = false,
-            2: numDois.selected = false,
-            3: numTres.selected,
-            4: "numQuatro",
-            5: "numCinco",
-            6: "numSeis",
-            7: "numSete",
-            8: "numOito",
-            9: "numNove"
-        ]*/
-        //let numTotalTabuadas = tabelaTabuadaTodos.count-1
-        //var tabelaTabuadaUm = tabelaTabuadaTodos.removeAtIndex(1)
-        
-        //var tabelaTabuada = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-        
-        /*for (numTabuada, varTabuada) in tabelaTabuada {
-        if(numTabuada != 1) {
-        //println("Tabuada: \(numTabuada) | Variável: \(varTabuada)")
-        //varTabuada.selected = false
-        }
-        }*/
-        
-        
         switch tabuada {
             case (1):
+                
                 numUm.selected = true
-            
-                numDois.selected = false
-                numTres.selected = false
-                numQuatro.selected = false
-                numCinco.selected = false
-                numSeis.selected = false
-                numSete.selected = false
-                numOito.selected = false
-                numNove.selected = false
+                tabuadaDeselect(1)
             
             case (2):
+                
                 numDois.selected = true
+                tabuadaDeselect(2)
             
-                numUm.selected = false
-                numTres.selected = false
-                numQuatro.selected = false
-                numCinco.selected = false
-                numSeis.selected = false
-                numSete.selected = false
-                numOito.selected = false
-                numNove.selected = false
+            
             case (3):
+                
                 numTres.selected = true
+                tabuadaDeselect(3)
             
-                numUm.selected = false
-                numDois.selected = false
-                numQuatro.selected = false
-                numCinco.selected = false
-                numSeis.selected = false
-                numSete.selected = false
-                numOito.selected = false
-                numNove.selected = false
             case (4):
+                
                 numQuatro.selected = true
+                tabuadaDeselect(4)
             
-                numUm.selected = false
-                numDois.selected = false
-                numTres.selected = false
-                numCinco.selected = false
-                numSeis.selected = false
-                numSete.selected = false
-                numOito.selected = false
-                numNove.selected = false
             case (5):
+                
                 numCinco.selected = true
-            
-                numUm.selected = false
-                numDois.selected = false
-                numTres.selected = false
-                numQuatro.selected = false
-                numSeis.selected = false
-                numSete.selected = false
-                numOito.selected = false
-                numNove.selected = false
+                tabuadaDeselect(5)
             
             case (6):
+                
                 numSeis.selected = true
-            
-                numUm.selected = false
-                numDois.selected = false
-                numTres.selected = false
-                numQuatro.selected = false
-                numCinco.selected = false
-                numSete.selected = false
-                numOito.selected = false
-                numNove.selected = false
+                tabuadaDeselect(6)
             
             case (7):
+                
                 numSete.selected = true
-            
-                numUm.selected = false
-                numDois.selected = false
-                numTres.selected = false
-                numQuatro.selected = false
-                numCinco.selected = false
-                numSeis.selected = false
-                numOito.selected = false
-                numNove.selected = false
+                tabuadaDeselect(7)
             
             case (8):
+                
                 numOito.selected = true
-            
-                numUm.selected = false
-                numDois.selected = false
-                numTres.selected = false
-                numQuatro.selected = false
-                numCinco.selected = false
-                numSeis.selected = false
-                numSete.selected = false
-                numNove.selected = false
+                tabuadaDeselect(8)
             
             case (9):
+                
                 numNove.selected = true
-            
-                numUm.selected = false
-                numDois.selected = false
-                numTres.selected = false
-                numQuatro.selected = false
-                numCinco.selected = false
-                numSeis.selected = false
-                numSete.selected = false
-                numOito.selected = false
+                tabuadaDeselect(9)
             
             default:
-                numUm.selected = false
+                println("Default Case")
+                /*numUm.selected = false
                 numDois.selected = false
                 numTres.selected = false
                 numQuatro.selected = false
@@ -182,7 +123,7 @@ class ViewController: UIViewController {
                 numSeis.selected = false
                 numSete.selected = false
                 numOito.selected = false
-                numNove.selected = false
+                numNove.selected = false*/
         }
         
         
@@ -211,10 +152,11 @@ class ViewController: UIViewController {
     @IBAction func clickBotaoUm(sender: AnyObject) {
         
         tabuadaSelecionada = 1
-        tabuadaSelect(1)
         
         println("Clique num 1")
-        println("Tabuada selecionada: \(tabuadaSelecionada)")
+        //println("Tabuada selecionada: \(tabuadaSelecionada)")
+        
+        tabuadaSelect(1)
         
     }
     
@@ -223,73 +165,80 @@ class ViewController: UIViewController {
         //numDois.selected = true
         
         tabuadaSelecionada = 2
-        tabuadaSelect(2)
         
         println("Clique num 2")
-        println(tabuadaSelecionada)
+        
+        tabuadaSelect(2)
         
     }
     
     @IBAction func clickBotaoTres(sender: AnyObject) {
         
         tabuadaSelecionada = 3
-        tabuadaSelect(3)
         
         println("Clique num 3")
+        
+        tabuadaSelect(3)
         
     }
     
     @IBAction func clickBotaoQuatro(sender: AnyObject) {
         
         tabuadaSelecionada = 4
-        tabuadaSelect(4)
         
         println("Clique num 4")
+        
+        tabuadaSelect(4)
         
     }
     
     @IBAction func clickBotaoCinco(sender: AnyObject) {
         
         tabuadaSelecionada = 5
-        tabuadaSelect(5)
         
         println("Clique num 5")
+        
+        tabuadaSelect(5)
         
     }
     
     @IBAction func clickBotaoSeis(sender: AnyObject) {
         
         tabuadaSelecionada = 6
-        tabuadaSelect(6)
         
         println("Clique num 6")
+        
+        tabuadaSelect(6)
         
     }
     
     @IBAction func clickBotaoSete(sender: AnyObject) {
         
         tabuadaSelecionada = 7
-        tabuadaSelect(7)
         
         println("Clique num 7")
+        
+        tabuadaSelect(7)
         
     }
     
     @IBAction func clickBotaoOito(sender: AnyObject) {
         
         tabuadaSelecionada = 8
-        tabuadaSelect(8)
         
         println("Clique num 8")
+        
+        tabuadaSelect(8)
         
     }
     
     @IBAction func clickBotaoNove(sender: AnyObject) {
         
         tabuadaSelecionada = 9
-        tabuadaSelect(9)
         
         println("Clique num 9")
+        
+        tabuadaSelect(9)
         
     }
     
