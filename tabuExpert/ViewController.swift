@@ -83,27 +83,32 @@ class ViewController: UIViewController {
                 
                 numUm.selected = true
                 tabuadaDeselect(1)
+                tabuadaSelecionada = 1
             
             case (2):
                 
                 numDois.selected = true
                 tabuadaDeselect(2)
+                tabuadaSelecionada = 2
             
             
             case (3):
                 
                 numTres.selected = true
                 tabuadaDeselect(3)
+                tabuadaSelecionada = 3
             
             case (4):
                 
                 numQuatro.selected = true
                 tabuadaDeselect(4)
+                tabuadaSelecionada = 4
             
             case (5):
                 
                 numCinco.selected = true
                 tabuadaDeselect(5)
+                tabuadaSelecionada = 5
             
             case (6):
                 
@@ -114,16 +119,19 @@ class ViewController: UIViewController {
                 
                 numSete.selected = true
                 tabuadaDeselect(7)
+                tabuadaSelecionada = 7
             
             case (8):
                 
                 numOito.selected = true
                 tabuadaDeselect(8)
+                tabuadaSelecionada = 8
             
             case (9):
                 
                 numNove.selected = true
                 tabuadaDeselect(9)
+                tabuadaSelecionada = 9
             
             default:
                 println("Default Case")
@@ -174,10 +182,6 @@ class ViewController: UIViewController {
     
     @IBAction func clickBotaoDois(sender: AnyObject) {
         
-        //numDois.selected = true
-        
-        tabuadaSelecionada = 2
-        
         println("Clique num 2")
         
         tabuadaSelect(2)
@@ -185,8 +189,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func clickBotaoTres(sender: AnyObject) {
-        
-        tabuadaSelecionada = 3
         
         println("Clique num 3")
         
@@ -196,8 +198,6 @@ class ViewController: UIViewController {
     
     @IBAction func clickBotaoQuatro(sender: AnyObject) {
         
-        tabuadaSelecionada = 4
-        
         println("Clique num 4")
         
         tabuadaSelect(4)
@@ -205,8 +205,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func clickBotaoCinco(sender: AnyObject) {
-        
-        tabuadaSelecionada = 5
         
         println("Clique num 5")
         
@@ -216,8 +214,6 @@ class ViewController: UIViewController {
     
     @IBAction func clickBotaoSeis(sender: AnyObject) {
         
-        tabuadaSelecionada = 6
-        
         println("Clique num 6")
         
         tabuadaSelect(6)
@@ -225,8 +221,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func clickBotaoSete(sender: AnyObject) {
-        
-        tabuadaSelecionada = 7
         
         println("Clique num 7")
         
@@ -236,8 +230,6 @@ class ViewController: UIViewController {
     
     @IBAction func clickBotaoOito(sender: AnyObject) {
         
-        tabuadaSelecionada = 8
-        
         println("Clique num 8")
         
         tabuadaSelect(8)
@@ -245,8 +237,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func clickBotaoNove(sender: AnyObject) {
-        
-        tabuadaSelecionada = 9
         
         println("Clique num 9")
         
