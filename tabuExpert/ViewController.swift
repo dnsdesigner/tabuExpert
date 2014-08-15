@@ -30,6 +30,18 @@ class ViewController: UIViewController {
         
         // Ações carregadas no início
         tabuadaSelect(1)
+        
+        /*
+        // Botão Customizado
+        numUm.frame = CGRectMake(100, 100, 100,50)
+        numUm.frame = CGRectMake(100.0, 100.0, 120.0, 50.0)//width and height should be same  value
+        numUm.clipsToBounds = true
+        numUm.layer.cornerRadius = 25 //half of the width
+        numUm.layer.borderColor = (UIColor( red: 0, green: 0, blue:0, alpha: 1.0 )).CGColor;
+        numUm.layer.borderWidth = 0.5
+        */
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
