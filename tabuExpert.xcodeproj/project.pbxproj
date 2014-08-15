@@ -13,6 +13,8 @@
 		95F1247E199D9374005D12F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95F1247C199D9374005D12F0 /* Main.storyboard */; };
 		95F12480199D9374005D12F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95F1247F199D9374005D12F0 /* Images.xcassets */; };
 		95F1248C199D9374005D12F0 /* tabuExpertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F1248B199D9374005D12F0 /* tabuExpertTests.swift */; };
+		EA896E3F199E38A800A9ABEA /* PerguntasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA896E3E199E38A800A9ABEA /* PerguntasViewController.swift */; };
+		EA896E41199E533200A9ABEA /* HistoricoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA896E40199E533200A9ABEA /* HistoricoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		95F12485199D9374005D12F0 /* tabuExpertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tabuExpertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F1248A199D9374005D12F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95F1248B199D9374005D12F0 /* tabuExpertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabuExpertTests.swift; sourceTree = "<group>"; };
+		EA896E3E199E38A800A9ABEA /* PerguntasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerguntasViewController.swift; sourceTree = "<group>"; };
+		EA896E40199E533200A9ABEA /* HistoricoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoricoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +82,13 @@
 			isa = PBXGroup;
 			children = (
 				95F12475199D9374005D12F0 /* AppDelegate.swift */,
+				EA896E40199E533200A9ABEA /* HistoricoViewController.swift */,
+				EA896E3E199E38A800A9ABEA /* PerguntasViewController.swift */,
 				95F1247A199D9374005D12F0 /* ViewController.swift */,
-				95F1247C199D9374005D12F0 /* Main.storyboard */,
 				95F1247F199D9374005D12F0 /* Images.xcassets */,
-				95F12477199D9374005D12F0 /* tabuExpert.xcdatamodeld */,
+				95F1247C199D9374005D12F0 /* Main.storyboard */,
 				95F12473199D9373005D12F0 /* Supporting Files */,
+				95F12477199D9374005D12F0 /* tabuExpert.xcdatamodeld */,
 			);
 			path = tabuExpert;
 			sourceTree = "<group>";
@@ -211,7 +217,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA896E3F199E38A800A9ABEA /* PerguntasViewController.swift in Sources */,
 				95F1247B199D9374005D12F0 /* ViewController.swift in Sources */,
+				EA896E41199E533200A9ABEA /* HistoricoViewController.swift in Sources */,
 				95F12476199D9374005D12F0 /* AppDelegate.swift in Sources */,
 				95F12479199D9374005D12F0 /* tabuExpert.xcdatamodeld in Sources */,
 			);
@@ -399,6 +407,7 @@
 				95F12491199D9374005D12F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		95F12492199D9374005D12F0 /* Build configuration list for PBXNativeTarget "tabuExpertTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +416,7 @@
 				95F12494199D9374005D12F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

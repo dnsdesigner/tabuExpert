@@ -25,6 +25,9 @@
                                 <state key="normal" title="2">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickBotaoDois:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eAS-b9-unn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qR3-nc-awQ">
                                 <rect key="frame" x="235" y="204" width="46" height="30"/>
@@ -32,6 +35,9 @@
                                 <state key="normal" title="3">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickBotaoTres:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ABZ-GL-lwh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAI-WA-eix">
                                 <rect key="frame" x="40" y="268" width="46" height="30"/>
@@ -39,6 +45,9 @@
                                 <state key="normal" title="4">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickBotaoQuatro:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bCO-ao-Q62"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3J-ye-1dA">
                                 <rect key="frame" x="137" y="268" width="46" height="30"/>
@@ -46,6 +55,9 @@
                                 <state key="normal" title="5">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickBotaoCinco:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Rmu-28-Qo7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lY5-R9-tqB">
                                 <rect key="frame" x="235" y="268" width="46" height="30"/>
@@ -53,6 +65,9 @@
                                 <state key="normal" title="6">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickBotaoSeis:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eCl-Rk-mfV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQJ-Ch-YFy">
                                 <rect key="frame" x="40" y="332" width="46" height="30"/>
@@ -60,6 +75,9 @@
                                 <state key="normal" title="7">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickBotaoSete:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nop-0N-Edm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9n6-OL-6lr">
                                 <rect key="frame" x="137" y="332" width="46" height="30"/>
@@ -67,6 +85,9 @@
                                 <state key="normal" title="8">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickBotaoOito:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ENc-J3-fdl"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="688-GF-JPB">
                                 <rect key="frame" x="235" y="332" width="46" height="30"/>
@@ -74,6 +95,9 @@
                                 <state key="normal" title="9">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickBotaoNove:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vqj-Ql-TzK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pc9-Pq-yXy">
                                 <rect key="frame" x="40" y="392" width="241" height="30"/>
@@ -84,7 +108,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Ccy-Qq-t7p" kind="show" id="img-Er-DO9"/>
+                                    <action selector="clickBotaoIniciar:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CCT-Tv-YO1"/>
+                                    <segue destination="Ccy-Qq-t7p" kind="show" identifier="seguePerguntas" id="img-Er-DO9"/>
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dcQ-e6-ZNi">
@@ -94,6 +119,9 @@
                                     <segment title="Inverso"/>
                                     <segment title="Randômico"/>
                                 </segments>
+                                <connections>
+                                    <action selector="alteracaoBarraOpcoes:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Agi-tL-H54"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tabu Expert App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fym-Nv-RCl">
                                 <rect key="frame" x="16" y="90" width="288" height="36"/>
@@ -118,7 +146,7 @@
                         <barButtonItem key="backBarButtonItem" title="Voltar" id="Uwe-k9-LsU"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="gbD-ly-17m">
                             <connections>
-                                <segue destination="t1o-ef-Ovt" kind="show" id="Ph1-R9-gsY"/>
+                                <segue destination="t1o-ef-Ovt" kind="show" identifier="segueHistorico" id="Qn7-y0-UgK"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -130,6 +158,16 @@
                         <size key="landscapeSize" width="568" height="320"/>
                     </simulatedScreenMetrics>
                     <connections>
+                        <outlet property="barraOpcoes" destination="dcQ-e6-ZNi" id="DgJ-K3-uk6"/>
+                        <outlet property="botaoIniciar" destination="pc9-Pq-yXy" id="85c-h3-vT6"/>
+                        <outlet property="numCinco" destination="A3J-ye-1dA" id="7eB-A6-HzX"/>
+                        <outlet property="numDois" destination="Hhr-3M-bA7" id="dOU-eT-1px"/>
+                        <outlet property="numNove" destination="688-GF-JPB" id="Stn-Fs-OEw"/>
+                        <outlet property="numOito" destination="9n6-OL-6lr" id="gF7-0d-DH6"/>
+                        <outlet property="numQuatro" destination="NAI-WA-eix" id="ppF-hK-dKQ"/>
+                        <outlet property="numSeis" destination="lY5-R9-tqB" id="TVi-CG-CO8"/>
+                        <outlet property="numSete" destination="WQJ-Ch-YFy" id="85p-eQ-VxQ"/>
+                        <outlet property="numTres" destination="qR3-nc-awQ" id="Uuj-94-0ZI"/>
                         <outlet property="numUm" destination="9gE-NM-WLB" id="At9-Ec-Umr"/>
                     </connections>
                 </viewController>
@@ -140,7 +178,7 @@
         <!--Histórico-->
         <scene sceneID="zJi-IC-uHp">
             <objects>
-                <viewController title="Histórico" id="t1o-ef-Ovt" sceneMemberID="viewController">
+                <viewController title="Histórico" id="t1o-ef-Ovt" customClass="HistoricoViewController" customModule="tabuExpert" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2bi-gY-pgd"/>
                         <viewControllerLayoutGuide type="bottom" id="83P-9a-QJi"/>
@@ -198,7 +236,7 @@
         <!--Perguntas-->
         <scene sceneID="KA1-uH-2SG">
             <objects>
-                <viewController title="Perguntas" id="Ccy-Qq-t7p" sceneMemberID="viewController">
+                <viewController title="Perguntas" id="Ccy-Qq-t7p" customClass="PerguntasViewController" customModule="tabuExpert" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jr9-FC-k75"/>
                         <viewControllerLayoutGuide type="bottom" id="RYZ-qy-pgD"/>
@@ -279,12 +317,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7 x 5 =" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFC-vz-ThY">
-                                <rect key="frame" x="40" y="123" width="143" height="36"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                <color key="textColor" red="0.97254908084869385" green="0.5058823823928833" blue="0.019607843831181526" alpha="1" colorSpace="deviceRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="35" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIc-HM-stw">
                                 <rect key="frame" x="191" y="123" width="90" height="36"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -300,7 +332,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EbE-hP-6ML">
-                                <rect key="frame" x="90" y="367" width="43" height="36"/>
+                                <rect key="frame" x="86" y="367" width="43" height="36"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="X">
@@ -309,7 +341,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmM-pt-Cpy">
-                                <rect key="frame" x="141" y="367" width="132" height="36"/>
+                                <rect key="frame" x="137" y="367" width="132" height="36"/>
                                 <color key="backgroundColor" red="0.050980396570000003" green="0.4156863093" blue="0.96862751250000001" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="OK">
@@ -317,6 +349,12 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7 x 5 =" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFC-vz-ThY">
+                                <rect key="frame" x="40" y="123" width="143" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" red="0.97254908084869385" green="0.5058823823928833" blue="0.019607843831181526" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -325,6 +363,10 @@
                         <size key="portraitSize" width="320" height="568"/>
                         <size key="landscapeSize" width="568" height="320"/>
                     </simulatedScreenMetrics>
+                    <connections>
+                        <outlet property="tituloCalculo" destination="XFC-vz-ThY" id="FDF-0L-cCc"/>
+                        <outlet property="tituloPergunta" destination="7ko-4N-bNy" id="8Uv-8Y-ZRI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YFV-aA-lnF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
