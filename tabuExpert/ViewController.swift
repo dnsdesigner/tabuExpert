@@ -30,8 +30,8 @@ class ViewController: UIViewController {
         
         // Ações carregadas no início
         //numUm.selected = true
-        tabuadaSelect(1)
-        tabuadaSelecionada = 1
+        //tabuadaSelect(1)
+        //tabuadaSelecionada = 1
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,37 +57,132 @@ class ViewController: UIViewController {
         //let numTotalTabuadas = tabelaTabuadaTodos.count-1
         //var tabelaTabuadaUm = tabelaTabuadaTodos.removeAtIndex(1)
         
+        //var tabelaTabuada = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        
+        /*for (numTabuada, varTabuada) in tabelaTabuada {
+        if(numTabuada != 1) {
+        //println("Tabuada: \(numTabuada) | Variável: \(varTabuada)")
+        //varTabuada.selected = false
+        }
+        }*/
+        
         
         switch tabuada {
             case (1):
                 numUm.selected = true
-                
-                /*for (numTabuada, varTabuada) in tabelaTabuada {
-                    if(numTabuada != 1) {
-                        //println("Tabuada: \(numTabuada) | Variável: \(varTabuada)")
-                        //varTabuada.selected = false
-                    }
-                }*/
+            
+                numDois.selected = false
+                numTres.selected = false
+                numQuatro.selected = false
+                numCinco.selected = false
+                numSeis.selected = false
+                numSete.selected = false
+                numOito.selected = false
+                numNove.selected = false
             
             case (2):
                 numDois.selected = true
+            
+                numUm.selected = false
+                numTres.selected = false
+                numQuatro.selected = false
+                numCinco.selected = false
+                numSeis.selected = false
+                numSete.selected = false
+                numOito.selected = false
+                numNove.selected = false
             case (3):
                 numTres.selected = true
+            
+                numUm.selected = false
+                numDois.selected = false
+                numQuatro.selected = false
+                numCinco.selected = false
+                numSeis.selected = false
+                numSete.selected = false
+                numOito.selected = false
+                numNove.selected = false
             case (4):
                 numQuatro.selected = true
+            
+                numUm.selected = false
+                numDois.selected = false
+                numTres.selected = false
+                numCinco.selected = false
+                numSeis.selected = false
+                numSete.selected = false
+                numOito.selected = false
+                numNove.selected = false
             case (5):
                 numCinco.selected = true
+            
+                numUm.selected = false
+                numDois.selected = false
+                numTres.selected = false
+                numQuatro.selected = false
+                numSeis.selected = false
+                numSete.selected = false
+                numOito.selected = false
+                numNove.selected = false
+            
             case (6):
                 numSeis.selected = true
+            
+                numUm.selected = false
+                numDois.selected = false
+                numTres.selected = false
+                numQuatro.selected = false
+                numCinco.selected = false
+                numSete.selected = false
+                numOito.selected = false
+                numNove.selected = false
+            
             case (7):
                 numSete.selected = true
+            
+                numUm.selected = false
+                numDois.selected = false
+                numTres.selected = false
+                numQuatro.selected = false
+                numCinco.selected = false
+                numSeis.selected = false
+                numOito.selected = false
+                numNove.selected = false
+            
             case (8):
                 numOito.selected = true
+            
+                numUm.selected = false
+                numDois.selected = false
+                numTres.selected = false
+                numQuatro.selected = false
+                numCinco.selected = false
+                numSeis.selected = false
+                numSete.selected = false
+                numNove.selected = false
+            
             case (9):
                 numNove.selected = true
             
+                numUm.selected = false
+                numDois.selected = false
+                numTres.selected = false
+                numQuatro.selected = false
+                numCinco.selected = false
+                numSeis.selected = false
+                numSete.selected = false
+                numOito.selected = false
+            
             default:
-                numUm.selected = true
+                numUm.selected = false
+                numDois.selected = false
+                numTres.selected = false
+                numQuatro.selected = false
+                numCinco.selected = false
+                numSeis.selected = false
+                numSete.selected = false
+                numOito.selected = false
+                numNove.selected = false
         }
         
         
@@ -115,19 +210,11 @@ class ViewController: UIViewController {
     // Ações nos botões numéricos da home
     @IBAction func clickBotaoUm(sender: AnyObject) {
         
-        /*
-        // Selecionar button
-        if(numUm.selected==true){
-            numUm.selected = false
-            
-        } else {
-            numUm.selected = true
-        }*/
-        
         tabuadaSelecionada = 1
+        tabuadaSelect(1)
         
         println("Clique num 1")
-        println(tabuadaSelecionada)
+        println("Tabuada selecionada: \(tabuadaSelecionada)")
         
     }
     
