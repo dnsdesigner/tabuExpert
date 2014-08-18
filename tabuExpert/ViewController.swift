@@ -29,10 +29,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // Ações carregadas no início
+        
+        // Habilita a barra de navegação
+        self.navigationController.setNavigationBarHidden(false, animated: true)
+        
+        // Oculta o botão voltar
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        
+        // Seleciona a tabuada 1 para iniciar o aplicativo
         tabuadaSelect(1)
         
         /*
-        // Botão Customizado
+        // Códigos para Botão Customizado
         numUm.frame = CGRectMake(100, 100, 100,50)
         numUm.frame = CGRectMake(100.0, 100.0, 120.0, 50.0)//width and height should be same  value
         numUm.clipsToBounds = true
@@ -114,6 +122,7 @@ class ViewController: UIViewController {
                 
                 numSeis.selected = true
                 tabuadaDeselect(6)
+                tabuadaSelecionada = 6
             
             case (7):
                 

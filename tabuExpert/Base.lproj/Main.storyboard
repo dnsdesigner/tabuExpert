@@ -8,7 +8,7 @@
         <!--Tela Inicial-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController title="Tela Inicial" modalTransitionStyle="flipHorizontal" id="vXZ-lx-hvc" customClass="ViewController" customModule="tabuExpert" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="telaIndex" title="Tela Inicial" modalTransitionStyle="flipHorizontal" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vXZ-lx-hvc" customClass="ViewController" customModule="tabuExpert" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -24,6 +24,7 @@
                                 <rect key="frame" x="137" y="204" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <state key="normal" title="2">
+                                    <color key="titleColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -34,6 +35,7 @@
                                 <rect key="frame" x="235" y="204" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <state key="normal" title="3">
+                                    <color key="titleColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -44,6 +46,7 @@
                                 <rect key="frame" x="40" y="268" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <state key="normal" title="4">
+                                    <color key="titleColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -54,6 +57,7 @@
                                 <rect key="frame" x="137" y="268" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <state key="normal" title="5">
+                                    <color key="titleColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -64,6 +68,7 @@
                                 <rect key="frame" x="235" y="268" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <state key="normal" title="6">
+                                    <color key="titleColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -74,6 +79,7 @@
                                 <rect key="frame" x="40" y="332" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <state key="normal" title="7">
+                                    <color key="titleColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -84,6 +90,7 @@
                                 <rect key="frame" x="137" y="332" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <state key="normal" title="8">
+                                    <color key="titleColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -94,6 +101,7 @@
                                 <rect key="frame" x="235" y="332" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <state key="normal" title="9">
+                                    <color key="titleColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -102,7 +110,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pc9-Pq-yXy">
                                 <rect key="frame" x="40" y="392" width="241" height="30"/>
-                                <color key="backgroundColor" red="0.050980396570000003" green="0.4156863093" blue="0.96862751250000001" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Iniciar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -120,6 +128,7 @@
                                     <segment title="Inverso"/>
                                     <segment title="Randômico"/>
                                 </segments>
+                                <color key="tintColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
                                 <connections>
                                     <action selector="alteracaoBarraOpcoes:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Agi-tL-H54"/>
                                 </connections>
@@ -127,13 +136,14 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tabu Expert App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fym-Nv-RCl">
                                 <rect key="frame" x="16" y="90" width="288" height="36"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <color key="textColor" red="0.058823533356189728" green="0.25098040699958801" blue="0.96078437566757202" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="textColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gE-NM-WLB">
                                 <rect key="frame" x="40" y="204" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <state key="normal" title="1">
+                                    <color key="titleColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -179,7 +189,7 @@
         <!--Histórico-->
         <scene sceneID="zJi-IC-uHp">
             <objects>
-                <viewController title="Histórico" id="t1o-ef-Ovt" customClass="HistoricoViewController" customModule="tabuExpert" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Histórico" useStoryboardIdentifierAsRestorationIdentifier="YES" id="t1o-ef-Ovt" customClass="HistoricoViewController" customModule="tabuExpert" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2bi-gY-pgd"/>
                         <viewControllerLayoutGuide type="bottom" id="83P-9a-QJi"/>
@@ -189,38 +199,51 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <userGuides>
                             <userLayoutGuide location="80" affinity="minY"/>
+                            <userLayoutGuide location="40" affinity="minY"/>
                         </userGuides>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tabuada" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ZF-eH-qIo">
-                                <rect key="frame" x="16" y="124" width="52" height="21"/>
+                                <rect key="frame" x="16" y="84" width="52" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" red="0.050980396570000003" green="0.4156863093" blue="0.96862751250000001" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="textColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Perguntas" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjE-4E-Ynu">
-                                <rect key="frame" x="90" y="124" width="60" height="21"/>
+                                <rect key="frame" x="90" y="84" width="60" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" red="0.050980396570000003" green="0.4156863093" blue="0.96862751250000001" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="textColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Respostas" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xn8-XV-NCl">
-                                <rect key="frame" x="168" y="124" width="60" height="21"/>
+                                <rect key="frame" x="168" y="84" width="60" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" red="0.050980396570000003" green="0.4156863093" blue="0.96862751250000001" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="textColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Taxa de precisão" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MpU-Cf-17l">
-                                <rect key="frame" x="16" y="80" width="288" height="36"/>
+                                <rect key="frame" x="16" y="40" width="288" height="36"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <color key="textColor" red="0.058823533359999999" green="0.25098040700000002" blue="0.96078437569999997" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="textColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Percentual" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CG4-1c-p9l">
-                                <rect key="frame" x="241" y="124" width="63" height="21"/>
+                                <rect key="frame" x="241" y="84" width="63" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" red="0.050980396570000003" green="0.4156863093" blue="0.96862751250000001" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="textColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AmG-ko-Wwx">
+                                <rect key="frame" x="40" y="392" width="241" height="34"/>
+                                <color key="backgroundColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Voltar">
+                                    <color key="titleColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickVoltarIndex:" destination="t1o-ef-Ovt" eventType="touchUpInside" id="RQj-cW-R9d"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -229,10 +252,13 @@
                         <size key="portraitSize" width="320" height="568"/>
                         <size key="landscapeSize" width="568" height="320"/>
                     </simulatedScreenMetrics>
+                    <connections>
+                        <outlet property="botaoVoltarIndex" destination="AmG-ko-Wwx" id="F2X-Zh-RPw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1d6-z8-3a1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="699" y="-197"/>
+            <point key="canvasLocation" x="627" y="-168"/>
         </scene>
         <!--Perguntas-->
         <scene sceneID="KA1-uH-2SG">
@@ -259,66 +285,102 @@
                                 <rect key="frame" x="40" y="190" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <state key="normal" title="7">
+                                    <color key="titleColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickBotaoNum7:" destination="Ccy-Qq-t7p" eventType="touchUpInside" id="5ZU-Lz-85H"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3W5-DW-OKM">
                                 <rect key="frame" x="137" y="190" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <state key="normal" title="8">
+                                    <color key="titleColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickBotaoNum8:" destination="Ccy-Qq-t7p" eventType="touchUpInside" id="pwO-pu-KNg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hD-tF-KLu">
                                 <rect key="frame" x="235" y="190" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <state key="normal" title="9">
+                                    <color key="titleColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickBotaoNum9:" destination="Ccy-Qq-t7p" eventType="touchUpInside" id="7hX-xH-OTA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c35-dT-YFc">
                                 <rect key="frame" x="40" y="254" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <state key="normal" title="4">
+                                    <color key="titleColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickBotaoNum4:" destination="Ccy-Qq-t7p" eventType="touchUpInside" id="7Qb-qs-YIw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ka-pO-WRn">
                                 <rect key="frame" x="137" y="254" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <state key="normal" title="5">
+                                    <color key="titleColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickBotaoNum5:" destination="Ccy-Qq-t7p" eventType="touchUpInside" id="3MZ-XP-u1g"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrQ-KQ-xbZ">
                                 <rect key="frame" x="235" y="254" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <state key="normal" title="6">
+                                    <color key="titleColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickBotaoNum6:" destination="Ccy-Qq-t7p" eventType="touchUpInside" id="YMb-Gu-ugS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OM9-Qb-4kb">
                                 <rect key="frame" x="40" y="318" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <state key="normal" title="1">
+                                    <color key="titleColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickBotaoNum1:" destination="Ccy-Qq-t7p" eventType="touchUpInside" id="cRf-LE-aI6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1AK-Ur-cql">
                                 <rect key="frame" x="137" y="318" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <state key="normal" title="2">
+                                    <color key="titleColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickBotaoNum2:" destination="Ccy-Qq-t7p" eventType="touchUpInside" id="shZ-if-F8t"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Hy-oJ-bdn">
                                 <rect key="frame" x="235" y="318" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <state key="normal" title="3">
+                                    <color key="titleColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickBotaoNum3:" destination="Ccy-Qq-t7p" eventType="touchUpInside" id="H8w-ID-LlQ"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="35" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIc-HM-stw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIc-HM-stw">
                                 <rect key="frame" x="191" y="123" width="90" height="36"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
@@ -329,31 +391,129 @@
                                 <rect key="frame" x="40" y="356" width="46" height="58"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <state key="normal" title="0">
+                                    <color key="titleColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickBotaoNum0:" destination="Ccy-Qq-t7p" eventType="touchUpInside" id="9D0-l4-avB"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7 x 5 =" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFC-vz-ThY">
+                                <rect key="frame" x="40" y="123" width="143" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" red="0.97254908084869385" green="0.5058823823928833" blue="0.019607843831181526" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EbE-hP-6ML">
-                                <rect key="frame" x="86" y="367" width="43" height="36"/>
+                                <rect key="frame" x="103" y="368" width="43" height="33"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="X">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickBotaoCancela:" destination="Ccy-Qq-t7p" eventType="touchUpInside" id="UyF-GN-3pW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmM-pt-Cpy">
-                                <rect key="frame" x="137" y="367" width="132" height="36"/>
-                                <color key="backgroundColor" red="0.050980396570000003" green="0.4156863093" blue="0.96862751250000001" alpha="1" colorSpace="deviceRGB"/>
+                                <rect key="frame" x="154" y="368" width="119" height="33"/>
+                                <color key="backgroundColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="OK">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickBotaoConfirma:" destination="Ccy-Qq-t7p" eventType="touchUpInside" id="Oty-Gg-5db"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7 x 5 =" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFC-vz-ThY">
-                                <rect key="frame" x="40" y="123" width="143" height="36"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                <color key="textColor" red="0.97254908084869385" green="0.5058823823928833" blue="0.019607843831181526" alpha="1" colorSpace="deviceRGB"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4">
+                        <size key="portraitSize" width="320" height="568"/>
+                        <size key="landscapeSize" width="568" height="320"/>
+                    </simulatedScreenMetrics>
+                    <connections>
+                        <outlet property="botaoCancela" destination="EbE-hP-6ML" id="Oeg-vc-ttt"/>
+                        <outlet property="botaoConfirma" destination="qmM-pt-Cpy" id="Jwy-Az-AIY"/>
+                        <outlet property="botaoNum0" destination="7bt-EU-QgS" id="4Hm-X0-mx7"/>
+                        <outlet property="botaoNum1" destination="OM9-Qb-4kb" id="QPQ-Tf-dI6"/>
+                        <outlet property="botaoNum2" destination="1AK-Ur-cql" id="asJ-Qg-yxn"/>
+                        <outlet property="botaoNum3" destination="2Hy-oJ-bdn" id="Lis-PU-eLD"/>
+                        <outlet property="botaoNum4" destination="c35-dT-YFc" id="KRS-sf-jHT"/>
+                        <outlet property="botaoNum5" destination="6ka-pO-WRn" id="7Iq-rh-sbn"/>
+                        <outlet property="botaoNum6" destination="vrQ-KQ-xbZ" id="Xke-md-4ew"/>
+                        <outlet property="botaoNum7" destination="S4I-hX-aYd" id="exT-5Z-7nd"/>
+                        <outlet property="botaoNum8" destination="3W5-DW-OKM" id="X2g-bf-fFp"/>
+                        <outlet property="botaoNum9" destination="8hD-tF-KLu" id="s7i-d5-je4"/>
+                        <outlet property="tituloCalculo" destination="XFC-vz-ThY" id="FDF-0L-cCc"/>
+                        <outlet property="tituloPergunta" destination="7ko-4N-bNy" id="8Uv-8Y-ZRI"/>
+                        <outlet property="visorResposta" destination="pIc-HM-stw" id="ajU-gC-GIv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YFV-aA-lnF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="627" y="467"/>
+        </scene>
+        <!--Resultado-->
+        <scene sceneID="rck-0d-HNY">
+            <objects>
+                <viewController storyboardIdentifier="telaResultado" title="Resultado" id="KRY-oi-4E5" customClass="ResultadoViewController" customModule="tabuExpert" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jTW-Kk-xAc"/>
+                        <viewControllerLayoutGuide type="bottom" id="fzw-jL-ltk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Se-QD-asB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <userGuides>
+                            <userLayoutGuide location="80" affinity="minY"/>
+                            <userLayoutGuide location="40" affinity="minY"/>
+                        </userGuides>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhH-7k-W15">
+                                <rect key="frame" x="40" y="392" width="241" height="34"/>
+                                <color key="backgroundColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Finalizar">
+                                    <color key="titleColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickVoltarIndex:" destination="KRY-oi-4E5" eventType="touchUpInside" id="qBI-yS-Ou9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pergunta" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAD-o2-ca4">
+                                <rect key="frame" x="16" y="84" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.050980396570000003" green="0.4156863093" blue="0.96862751250000001" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resposta" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLf-2c-XYs">
+                                <rect key="frame" x="90" y="84" width="60" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Correto" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkF-jW-rNI">
+                                <rect key="frame" x="168" y="84" width="60" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resultado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DvH-DG-Z4N">
+                                <rect key="frame" x="16" y="40" width="288" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resultado" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJR-b8-qRT">
+                                <rect key="frame" x="241" y="84" width="63" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.15686275059999999" green="0.50196081400000003" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -365,13 +525,12 @@
                         <size key="landscapeSize" width="568" height="320"/>
                     </simulatedScreenMetrics>
                     <connections>
-                        <outlet property="tituloCalculo" destination="XFC-vz-ThY" id="FDF-0L-cCc"/>
-                        <outlet property="tituloPergunta" destination="7ko-4N-bNy" id="8Uv-8Y-ZRI"/>
+                        <outlet property="botaoVoltarIndex" destination="MhH-7k-W15" id="Vxg-3j-5YU"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YFV-aA-lnF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nJF-F8-zye" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="699" y="462"/>
+            <point key="canvasLocation" x="989" y="467"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="c35-JJ-JDU">
