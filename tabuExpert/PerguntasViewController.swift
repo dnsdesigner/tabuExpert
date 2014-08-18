@@ -37,17 +37,7 @@ class PerguntasViewController: UIViewController {
     @IBOutlet weak var botaoNum8: UIButton!
     @IBOutlet weak var botaoNum9: UIButton!
     
-    var tabelaTabuada:[Int:Int] = [
-        1:0,
-        2:0,
-        3:0,
-        4:0,
-        5:0,
-        6:0,
-        7:0,
-        8:0,
-        9:0
-    ]
+    var tabelaTabuada:[Int:Int] = [1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0, 9:0]
     var indiceTabuada = 1
     
     // Variável de troca de informação entre as Views
@@ -142,8 +132,12 @@ class PerguntasViewController: UIViewController {
                 
                 }
                 
-                // Carregar a view resultado via código
+                // Carregar a view resultado via código e envia dados para a view
+                
+                
                 let telaResultado = self.storyboard.instantiateViewControllerWithIdentifier("telaResultado") as ResultadoViewController
+                telaResultado.textoViewPergunta = "Valor enviado pela view Pergunta"
+                telaResultado.tabelaRespostas =  tabelaTabuada
                 self.navigationController.pushViewController(telaResultado, animated: true)
                 
             }

@@ -11,11 +11,25 @@ import UIKit
 class ResultadoViewController: UIViewController {
     
     @IBOutlet weak var botaoVoltarIndex: UIButton!
+    @IBOutlet weak var valorView: UILabel!
+    @IBOutlet weak var labelPerguntas: UILabel!
+    
+    // Variáveis para troca de informações entre as views
+    var textoViewPergunta:String?
+    var tabelaRespostas:[Int:Int]?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        //Ajusta a label perguntas
+        
+        
+        
+        // Carrega o valor da view Pergunta
+        valorView.text = textoViewPergunta
         
         // Código para ocultar a barra de navegação
         self.navigationController.setNavigationBarHidden(true, animated: true)
