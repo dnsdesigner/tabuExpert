@@ -37,16 +37,24 @@ class PerguntasViewController: UIViewController {
     @IBOutlet weak var botaoNum8: UIButton!
     @IBOutlet weak var botaoNum9: UIButton!
     
+    @IBOutlet weak var lblTest: UILabel!
+    
     var tabelaTabuada:[Int:Int] = [1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0, 9:0]
     var indiceTabuada = 1
     
     // Variável de troca de informação entre as Views
     var tabuadaSelecionada:Int!
     var ordemSelecionada:String!
+    var arrayTest:[Int:Int]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        for(index, valor) in arrayTest {
+            lblTest.text = "\(index) e \(valor)"
+        }
+        
         
         tituloPergunta.text = "Tabuada do \(tabuadaSelecionada) - \(ordemSelecionada)"
         tituloCalculo.text = "\(tabuadaSelecionada) x \(indiceTabuada) ="
@@ -91,17 +99,6 @@ class PerguntasViewController: UIViewController {
         if(resposta.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)<=0)
         {
             // Exibe uma tela de alerta caso não tenha uma resposta digitada
-            /*var telaAlert = UIAlertController(title: "Alerta",
-                message: "É necessário digitar uma resposta",
-                preferredStyle: UIAlertControllerStyle.Alert)
-            
-            telaAlert.addAction(UIAlertAction(title: "Ok",
-                style: UIAlertActionStyle.Default, handler: nil))
-            
-            //self.presentViewController(telaAlert, animated: true, completion: nil)
-            
-            */
-            
             var alert: UIAlertView = UIAlertView()
             alert.title = "Atenção"
             alert.message = "Digite uma resposta"

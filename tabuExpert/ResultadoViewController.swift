@@ -10,23 +10,45 @@ import UIKit
 
 class ResultadoViewController: UIViewController {
     
+    
+    
     @IBOutlet weak var botaoVoltarIndex: UIButton!
     @IBOutlet weak var valorView: UILabel!
     @IBOutlet weak var labelPerguntas: UILabel!
     
+    //Label perguntas
+    @IBOutlet weak var lp1: UILabel!
+    @IBOutlet weak var lp2: UILabel!
+    @IBOutlet weak var lp3: UILabel!
+    @IBOutlet weak var lp4: UILabel!
+    @IBOutlet weak var lp5: UILabel!
+    @IBOutlet weak var lp6: UILabel!
+    @IBOutlet weak var lp7: UILabel!
+    @IBOutlet weak var lp8: UILabel!
+    @IBOutlet weak var lp9: UILabel!
+    
+    
     // Variáveis para troca de informações entre as views
     var textoViewPergunta:String?
     var tabelaRespostas:[Int:Int]?
+
+    //Label respostas
+    
+    //Label respostas corretas
+    
+    //Label resultado
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         
+        
         //Ajusta a label perguntas
-        
-        
+        /*for(numIndice, numResposta) in tabelaRespostas {
+            println("Resultados")
+        }*/
         
         // Carrega o valor da view Pergunta
         valorView.text = textoViewPergunta
@@ -44,16 +66,6 @@ class ResultadoViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        // Get the new view controll using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
     @IBAction func clickVoltarIndex(sender: AnyObject) {
         
         // Carrega a view anterior
