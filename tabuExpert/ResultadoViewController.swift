@@ -30,25 +30,13 @@ class ResultadoViewController: UIViewController {
     
     // Variáveis para troca de informações entre as views
     var textoViewPergunta:String?
-    var tabelaRespostas:[Int:Int]?
+    //var tabelaRespostas:[Int:Int]?
 
-    //Label respostas
-    
-    //Label respostas corretas
-    
-    //Label resultado
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        
-        //Ajusta a label perguntas
-        /*for(numIndice, numResposta) in tabelaRespostas {
-            println("Resultados")
-        }*/
         
         // Carrega o valor da view Pergunta
         valorView.text = textoViewPergunta

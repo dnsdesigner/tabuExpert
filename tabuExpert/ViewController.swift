@@ -168,7 +168,6 @@ class ViewController: UIViewController {
             // Realiza o envio da variável
             segueTela.tabuadaSelecionada = tabuadaSelecionada
             segueTela.ordemSelecionada = barraOpcoes.titleForSegmentAtIndex(barraOpcoes.selectedSegmentIndex)
-            segueTela.arrayTest = [1:1, 2:2, 3:3]
             
         } else if(segue.identifier == "segueHistorico") {
             

@@ -428,12 +428,6 @@
                                     <action selector="clickBotaoConfirma:" destination="Ccy-Qq-t7p" eventType="touchUpInside" id="Oty-Gg-5db"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJ0-0g-71x">
-                                <rect key="frame" x="139" y="439" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -455,11 +449,9 @@
                         <outlet property="botaoNum7" destination="S4I-hX-aYd" id="exT-5Z-7nd"/>
                         <outlet property="botaoNum8" destination="3W5-DW-OKM" id="X2g-bf-fFp"/>
                         <outlet property="botaoNum9" destination="8hD-tF-KLu" id="s7i-d5-je4"/>
-                        <outlet property="lblTest" destination="VJ0-0g-71x" id="ZGP-Tr-srC"/>
                         <outlet property="tituloCalculo" destination="XFC-vz-ThY" id="FDF-0L-cCc"/>
                         <outlet property="tituloPergunta" destination="7ko-4N-bNy" id="8Uv-8Y-ZRI"/>
                         <outlet property="visorResposta" destination="pIc-HM-stw" id="ajU-gC-GIv"/>
-                        <segue destination="KRY-oi-4E5" kind="show" identifier="segueResultado" id="eWs-KL-kgj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YFV-aA-lnF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -469,7 +461,7 @@
         <!--Resultado-->
         <scene sceneID="rck-0d-HNY">
             <objects>
-                <viewController storyboardIdentifier="telaResultado" title="Resultado" id="KRY-oi-4E5" customClass="ResultadoViewController" customModule="tabuExpert" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="telaResultado" title="Resultado" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KRY-oi-4E5" customClass="ResultadoViewController" customModule="tabuExpert" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jTW-Kk-xAc"/>
                         <viewControllerLayoutGuide type="bottom" id="fzw-jL-ltk"/>

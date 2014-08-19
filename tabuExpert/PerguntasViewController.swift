@@ -45,16 +45,10 @@ class PerguntasViewController: UIViewController {
     // Variável de troca de informação entre as Views
     var tabuadaSelecionada:Int!
     var ordemSelecionada:String!
-    var arrayTest:[Int:Int]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        for(index, valor) in arrayTest {
-            lblTest.text = "\(index) e \(valor)"
-        }
-        
         
         tituloPergunta.text = "Tabuada do \(tabuadaSelecionada) - \(ordemSelecionada)"
         tituloCalculo.text = "\(tabuadaSelecionada) x \(indiceTabuada) ="
@@ -63,20 +57,6 @@ class PerguntasViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    // Função para carregar uma Segunda ViewController
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        
-        if(segue.identifier == "segueResultado") {
-            
-            var segueTela = segue!.destinationViewController as ResultadoViewController;
-            
-            // Realiza o envio da variável
-            /*segueTela.tabuadaSelecionada = tabuadaSelecionada
-            segueTela.ordemSelecionada = barraOpcoes.titleForSegmentAtIndex(barraOpcoes.selectedSegmentIndex)*/
-            
-        }
     }
     
     func validaVisor(botao:Int) {
@@ -130,12 +110,12 @@ class PerguntasViewController: UIViewController {
                 }
                 
                 // Carregar a view resultado via código e envia dados para a view
-                
-                
                 let telaResultado = self.storyboard.instantiateViewControllerWithIdentifier("telaResultado") as ResultadoViewController
                 telaResultado.textoViewPergunta = "Valor enviado pela view Pergunta"
-                telaResultado.tabelaRespostas =  tabelaTabuada
+                //telaResultado.tabelaRespostas =  tabelaTabuada
                 self.navigationController.pushViewController(telaResultado, animated: true)
+                
+                
                 
             }
         }
