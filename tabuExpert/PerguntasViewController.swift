@@ -27,19 +27,44 @@ class PerguntasViewController: UIViewController {
     @IBOutlet weak var botaoNum8: UIButton!
     @IBOutlet weak var botaoNum9: UIButton!
     
-    var tabelaTabuada:[Int:Int] = [1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0, 9:0]
-    var indiceTabuada = 1
-    
     // Variável de troca de informação entre as Views
     var tabuadaSelecionada:Int!
-    var ordemSelecionada:String!
+    var ordemSelecionada:Int!
+    var ordemSelecionadaTitle:String!
+    
+    // Arrays de tabuada
+    var tabelaTabuada:[Int:Int] = [1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0, 9:0]
+    
+    var tabelaTabuadaSequencial:[Int:Int] = [1:1, 2:2, 3:3, 4:4, 5:5, 6:6, 7:7, 8:8, 9:9]
+    var tabelaTabuadaInversa:[Int:Int] = [1:9, 2:8, 3:7, 4:6, 5:5, 6:4, 7:3, 8:2, 9:1]
 
+    var indiceTabuada:Int = 0
+    var indiceTabuadaInverso:Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
-        tituloPergunta.text = "Tabuada do \(tabuadaSelecionada) - \(ordemSelecionada)"
-        tituloCalculo.text = "\(tabuadaSelecionada) x \(indiceTabuada) ="
+        // Informações carregadas após a view ser carregada
+        
+        indiceTabuada=1
+        indiceTabuadaInverso = tabelaTabuadaInversa[indiceTabuada]!
+        
+        
+        // Adiciona os títulos nas labels de ínicio
+        tituloPergunta.text = "Tabuada do \(tabuadaSelecionada) - \(ordemSelecionadaTitle)"
+        
+        // Verifica a ordem selecionada e exibe na tela o cálculo inicial
+        if(ordemSelecionada==0) {
+            
+            tituloCalculo.text = "\(tabuadaSelecionada) x \(indiceTabuada) ="
+            
+        }
+        else if(ordemSelecionada==1) {
+            
+            tituloCalculo.text = "\(tabuadaSelecionada) x \(indiceTabuadaInverso) ="
+            
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -74,11 +99,12 @@ class PerguntasViewController: UIViewController {
     }
     
     @IBAction func clickBotaoConfirma(sender: AnyObject) {
-        println("Clique botão Confirma")
-        println(indiceTabuada)
+        
+        //println("Clique botão Confirma")
         
         // Verifica e foi digitado algo como resposta
         var resposta:String = visorResposta.text
+        
         if(resposta.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)<=0)
         {
             // Exibe uma tela de alerta caso não tenha uma resposta digitada
@@ -91,18 +117,49 @@ class PerguntasViewController: UIViewController {
         }
         else
         {
-            // Grava a resposta no array de tabela da tabuada
-            tabelaTabuada[indiceTabuada] = resposta.toInt()
+            // Verifica a ordem selecionada e Grava o resultado na posição correta da tabela
+            if(ordemSelecionada==0) {
+                
+                // Grava a resposta no array de tabela da tabuada
+                tabelaTabuada[indiceTabuada] = resposta.toInt()
+                
+            }
+            else if(ordemSelecionada==1) {
+                
+                // Grava a resposta no array de tabela da tabuada
+                tabelaTabuada[indiceTabuadaInverso] = resposta.toInt()
+                
+            }
+            
+            //Printa a informação para verificar os valores passados
+            println("Indice sequencial: \(indiceTabuada)")
+            println("Indice inverso: \(indiceTabuadaInverso)")
+            println("Resposta: \(resposta.toInt())")
+            
             
             if(indiceTabuada<9) {
                 
                 // Soma mais 1 no índice
                 ++indiceTabuada
                 
+                // Atualizo o indice da tabuada inverso
+                indiceTabuadaInverso = tabelaTabuadaInversa[indiceTabuada]!
+                
                 // Limpa o visor
                 visorResposta.text = ""
                 
-                tituloCalculo.text = "\(tabuadaSelecionada) x \(indiceTabuada) ="
+                // Verifica a ordem selecionada e exibe na tela o cálculo inicial
+                if(ordemSelecionada==0) {
+                    
+                    tituloCalculo.text = "\(tabuadaSelecionada) x \(indiceTabuada) ="
+                    
+                }
+                else if(ordemSelecionada==1) {
+                    
+                    tituloCalculo.text = "\(tabuadaSelecionada) x \(indiceTabuadaInverso) ="
+                    
+                }
+
             }
             else if(indiceTabuada==9)
             {
@@ -111,7 +168,6 @@ class PerguntasViewController: UIViewController {
                     println("Indice: \(numIndice) | Resposta: \(numResposta)")
                 
                 }
-                
                 
                 /*
                 // Carregar a view resultado via código e envia dados para a view
@@ -127,63 +183,60 @@ class PerguntasViewController: UIViewController {
             }
         }
         
-        
-        
-        
     }
     
     @IBAction func clickBotaoCancela(sender: AnyObject) {
-        println("Clique botão Cancela")
+        //println("Clique botão Cancela")
         visorResposta.text = ""
     }
     
     @IBAction func clickBotaoNum0(sender: AnyObject) {
-        println("Clique botão num 0")
+        //println("Clique botão num 0")
         validaVisor(0)
     }
     
     @IBAction func clickBotaoNum1(sender: AnyObject) {
-        println("Clique botão num 1")
+        //println("Clique botão num 1")
         validaVisor(1)
     }
 
     @IBAction func clickBotaoNum2(sender: AnyObject) {
-        println("Clique botão num 2")
+        //println("Clique botão num 2")
         validaVisor(2)
     }
 
     @IBAction func clickBotaoNum3(sender: AnyObject) {
-        println("Clique botão num 3")
+        //println("Clique botão num 3")
         validaVisor(3)
     }
 
     @IBAction func clickBotaoNum4(sender: AnyObject) {
-        println("Clique botão num 4")
+        //println("Clique botão num 4")
         validaVisor(4)
     }
 
     @IBAction func clickBotaoNum5(sender: AnyObject) {
-        println("Clique botão num 5")
+        //println("Clique botão num 5")
         validaVisor(5)
     }
 
     @IBAction func clickBotaoNum6(sender: AnyObject) {
-        println("Clique botão num 6")
+        //println("Clique botão num 6")
         validaVisor(6)
     }
 
     @IBAction func clickBotaoNum7(sender: AnyObject) {
-        println("Clique botão num 7")
+        //println("Clique botão num 7")
         validaVisor(7)
     }
 
     @IBAction func clickBotaoNum8(sender: AnyObject) {
-        println("Clique botão num 8")
+        //println("Clique botão num 8")
         validaVisor(8)
     }
 
     @IBAction func clickBotaoNum9(sender: AnyObject) {
-        println("Clique botão num 9")
+        //println("Clique botão num 9")
         validaVisor(9)
     }
 

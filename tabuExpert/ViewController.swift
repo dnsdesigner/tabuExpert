@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
     
     var tabuadaSelecionada:Int = 0
+    var ordemSelecionada:Int = 0
+    var ordemSelecionadaTitle:String = "Sequencial"
     
     @IBOutlet weak var barraOpcoes: UISegmentedControl!
     @IBOutlet weak var botaoIniciar: UIButton!
@@ -92,12 +94,14 @@ class ViewController: UIViewController {
                 numUm.selected = true
                 tabuadaDeselect(1)
                 tabuadaSelecionada = 1
+                break
             
             case (2):
                 
                 numDois.selected = true
                 tabuadaDeselect(2)
                 tabuadaSelecionada = 2
+                break
             
             
             case (3):
@@ -105,54 +109,52 @@ class ViewController: UIViewController {
                 numTres.selected = true
                 tabuadaDeselect(3)
                 tabuadaSelecionada = 3
+                break
             
             case (4):
                 
                 numQuatro.selected = true
                 tabuadaDeselect(4)
                 tabuadaSelecionada = 4
+                break
             
             case (5):
                 
                 numCinco.selected = true
                 tabuadaDeselect(5)
                 tabuadaSelecionada = 5
+                break
             
             case (6):
                 
                 numSeis.selected = true
                 tabuadaDeselect(6)
                 tabuadaSelecionada = 6
+                break
             
             case (7):
                 
                 numSete.selected = true
                 tabuadaDeselect(7)
                 tabuadaSelecionada = 7
+                break
             
             case (8):
                 
                 numOito.selected = true
                 tabuadaDeselect(8)
                 tabuadaSelecionada = 8
+                break
             
             case (9):
                 
                 numNove.selected = true
                 tabuadaDeselect(9)
                 tabuadaSelecionada = 9
+                break
             
             default:
-                println("Default Case")
-                /*numUm.selected = false
-                numDois.selected = false
-                numTres.selected = false
-                numQuatro.selected = false
-                numCinco.selected = false
-                numSeis.selected = false
-                numSete.selected = false
-                numOito.selected = false
-                numNove.selected = false*/
+                break
         }
         
         
@@ -167,7 +169,9 @@ class ViewController: UIViewController {
             
             // Realiza o envio da variável
             segueTela.tabuadaSelecionada = tabuadaSelecionada
-            segueTela.ordemSelecionada = barraOpcoes.titleForSegmentAtIndex(barraOpcoes.selectedSegmentIndex)
+            //segueTela.ordemSelecionada = barraOpcoes.titleForSegmentAtIndex(barraOpcoes.selectedSegmentIndex)
+            segueTela.ordemSelecionada = ordemSelecionada
+            segueTela.ordemSelecionadaTitle = ordemSelecionadaTitle
             
         } else if(segue.identifier == "segueHistorico") {
             
@@ -182,7 +186,7 @@ class ViewController: UIViewController {
         
         tabuadaSelecionada = 1
         
-        println("Clique num 1")
+        //println("Clique num 1")
         //println("Tabuada selecionada: \(tabuadaSelecionada)")
         
         tabuadaSelect(1)
@@ -191,7 +195,7 @@ class ViewController: UIViewController {
     
     @IBAction func clickBotaoDois(sender: AnyObject) {
         
-        println("Clique num 2")
+        //println("Clique num 2")
         
         tabuadaSelect(2)
         
@@ -199,7 +203,7 @@ class ViewController: UIViewController {
     
     @IBAction func clickBotaoTres(sender: AnyObject) {
         
-        println("Clique num 3")
+        //println("Clique num 3")
         
         tabuadaSelect(3)
         
@@ -207,7 +211,7 @@ class ViewController: UIViewController {
     
     @IBAction func clickBotaoQuatro(sender: AnyObject) {
         
-        println("Clique num 4")
+        //println("Clique num 4")
         
         tabuadaSelect(4)
         
@@ -215,7 +219,7 @@ class ViewController: UIViewController {
     
     @IBAction func clickBotaoCinco(sender: AnyObject) {
         
-        println("Clique num 5")
+        //println("Clique num 5")
         
         tabuadaSelect(5)
         
@@ -223,7 +227,7 @@ class ViewController: UIViewController {
     
     @IBAction func clickBotaoSeis(sender: AnyObject) {
         
-        println("Clique num 6")
+        //println("Clique num 6")
         
         tabuadaSelect(6)
         
@@ -231,7 +235,7 @@ class ViewController: UIViewController {
     
     @IBAction func clickBotaoSete(sender: AnyObject) {
         
-        println("Clique num 7")
+        //println("Clique num 7")
         
         tabuadaSelect(7)
         
@@ -239,7 +243,7 @@ class ViewController: UIViewController {
     
     @IBAction func clickBotaoOito(sender: AnyObject) {
         
-        println("Clique num 8")
+        //println("Clique num 8")
         
         tabuadaSelect(8)
         
@@ -247,7 +251,7 @@ class ViewController: UIViewController {
     
     @IBAction func clickBotaoNove(sender: AnyObject) {
         
-        println("Clique num 9")
+        //println("Clique num 9")
         
         tabuadaSelect(9)
         
@@ -260,8 +264,11 @@ class ViewController: UIViewController {
         var opcaotitle = barraOpcoes.titleForSegmentAtIndex(barraOpcoes.selectedSegmentIndex)
         var opcaoIndex = barraOpcoes.selectedSegmentIndex
         
-        println("Título: \(opcaotitle)")
-        println("Index: \(opcaoIndex)")
+        println("Título da Opção: \(opcaotitle)")
+        println("Indice da Opção: \(opcaoIndex)")
+        
+        ordemSelecionada = opcaoIndex
+        ordemSelecionadaTitle = opcaotitle
         
     }
     
