@@ -6,20 +6,10 @@
 //  Copyright (c) 2014 Dennis de Oliveira. All rights reserved.
 //
 
-/*
-// MARK: - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-// Get the new view controller using segue.destinationViewController.
-// Pass the selected object to the new view controller.
-}
-*/
-
-
 import UIKit
 
 class PerguntasViewController: UIViewController {
+    
     
     @IBOutlet weak var tituloPergunta: UILabel!
     @IBOutlet weak var tituloCalculo: UILabel!
@@ -36,8 +26,6 @@ class PerguntasViewController: UIViewController {
     @IBOutlet weak var botaoNum7: UIButton!
     @IBOutlet weak var botaoNum8: UIButton!
     @IBOutlet weak var botaoNum9: UIButton!
-    
-    @IBOutlet weak var lblTest: UILabel!
     
     var tabelaTabuada:[Int:Int] = [1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0, 9:0]
     var indiceTabuada = 1
@@ -57,6 +45,21 @@ class PerguntasViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        
+        if(segue.identifier=="segueResultado") {
+            
+            // Prepara os dados para enviar para a tela de Resultado
+            let telaResultado = segue.destinationViewController as ResultadoViewController
+            
+            telaResultado.tabuadaSelecionada = tabuadaSelecionada
+            telaResultado.tabelaRespostas = tabelaTabuada
+        }
+        
     }
     
     func validaVisor(botao:Int) {
@@ -109,12 +112,16 @@ class PerguntasViewController: UIViewController {
                 
                 }
                 
+                
+                /*
                 // Carregar a view resultado via código e envia dados para a view
                 let telaResultado = self.storyboard.instantiateViewControllerWithIdentifier("telaResultado") as ResultadoViewController
                 telaResultado.textoViewPergunta = "Valor enviado pela view Pergunta"
                 //telaResultado.tabelaRespostas =  tabelaTabuada
                 self.navigationController.pushViewController(telaResultado, animated: true)
+                */
                 
+                self.performSegueWithIdentifier("segueResultado", sender: self)
                 
                 
             }
