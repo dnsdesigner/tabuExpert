@@ -226,7 +226,7 @@ class ResultadoViewController: UIViewController {
         }
         
         // Código para ocultar a barra de navegação
-        self.navigationController.setNavigationBarHidden(true, animated: true)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
         
         // Oculta o botão voltar
         //self.navigationItem.setHidesBackButton(true, animated: true)
@@ -243,8 +243,8 @@ class ResultadoViewController: UIViewController {
         // Carrega a view anterior
         
         // Carregar a view resultado via código
-        let irParaIndex = self.storyboard.instantiateViewControllerWithIdentifier("telaIndex") as ViewController
-        self.navigationController.pushViewController(irParaIndex, animated: true)
+        let irParaIndex = self.storyboard?.instantiateViewControllerWithIdentifier("telaIndex") as ViewController
+        self.navigationController?.pushViewController(irParaIndex, animated: true)
     }
 
 }

@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         // Ações carregadas no início
         
         // Habilita a barra de navegação
-        self.navigationController.setNavigationBarHidden(false, animated: true)
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
         
         // Oculta o botão voltar
         self.navigationItem.setHidesBackButton(true, animated: true)
@@ -161,11 +161,11 @@ class ViewController: UIViewController {
     }
     
     // Função para carregar uma Segunda ViewController
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         
         if(segue.identifier == "seguePerguntas") {
             
-            var segueTela = segue!.destinationViewController as PerguntasViewController;
+            var segueTela = segue.destinationViewController as PerguntasViewController;
             
             // Realiza o envio da variável
             segueTela.tabuadaSelecionada = tabuadaSelecionada
@@ -175,7 +175,7 @@ class ViewController: UIViewController {
             
         } else if(segue.identifier == "segueHistorico") {
             
-            var segueTela = segue!.destinationViewController as HistoricoViewController
+            var segueTela = segue.destinationViewController as HistoricoViewController
             
         }
         
@@ -268,7 +268,7 @@ class ViewController: UIViewController {
         println("Indice da Opção: \(opcaoIndex)")
         
         ordemSelecionada = opcaoIndex
-        ordemSelecionadaTitle = opcaotitle
+        ordemSelecionadaTitle = opcaotitle!
         
     }
     

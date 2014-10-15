@@ -18,7 +18,7 @@ class HistoricoViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         // Código para ocultar a barra de navegação
-        self.navigationController.setNavigationBarHidden(true, animated: true)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
 
     }
 
@@ -32,8 +32,8 @@ class HistoricoViewController: UIViewController {
         // Carrega a view anterior
         
         // Carregar a view resultado via código
-        let irParaIndex = self.storyboard.instantiateViewControllerWithIdentifier("telaIndex") as ViewController
-        self.navigationController.pushViewController(irParaIndex, animated: true)
+        let irParaIndex = self.storyboard?.instantiateViewControllerWithIdentifier("telaIndex") as ViewController
+        self.navigationController?.pushViewController(irParaIndex, animated: true)
     }
     
 

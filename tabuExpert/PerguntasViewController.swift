@@ -72,7 +72,7 @@ class PerguntasViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         
@@ -89,7 +89,7 @@ class PerguntasViewController: UIViewController {
     
     func validaVisor(botao:Int) {
         
-        var resposta:String = visorResposta.text
+        var resposta:String = visorResposta.text!
         
         if(resposta.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)<2) {
             resposta += toString(botao)
@@ -103,7 +103,7 @@ class PerguntasViewController: UIViewController {
         //println("Clique botão Confirma")
         
         // Verifica e foi digitado algo como resposta
-        var resposta:String = visorResposta.text
+        var resposta:String = visorResposta.text!
         
         if(resposta.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)<=0)
         {
